@@ -1,0 +1,5 @@
+.footer { border-top: 1px solid var(--border); padding-block: 32px; color: var(--muted); font-size: 0.9rem; }
+.footer-inner { display: flex; flex-direction: column; gap: 16px; align-items: center; justify-content: space-between; text-align: center; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.footer-links a:hover { color: var(--text); }
+@media (min-width: 640px) { .footer-inner { flex-direction: row; text-align: left; } }

@@ -7,6 +7,9 @@ export interface Project {
   description: string
   category: ProjectCategory
   tags: string[]
+  featured?: boolean
+  github?: string
+  demo?: string
 }
 
 export const projects: Project[] = [
@@ -18,6 +21,7 @@ export const projects: Project[] = [
       'Roblox management game: build your own lucky block factory, automate production and upgrade your machines to become the richest player.',
     category: 'roblox',
     tags: ['Luau', 'Roblox Studio', 'DataStore'],
+    featured: true,
   },
   {
     name: 'Monster Mayhem',
@@ -41,6 +45,7 @@ export const projects: Project[] = [
     name: 'Setting Up',
     image: '/assets/Images/p1.png',
     link: 'https://github.com/HectorColaert/setting-up',
+    github: 'https://github.com/HectorColaert/setting-up',
     description:
       'First Epitech project: full setup of a Linux development environment and everyday tooling.',
     category: 'school',
@@ -50,6 +55,7 @@ export const projects: Project[] = [
     name: 'my_printf',
     image: '/assets/Images/p2.png',
     link: 'https://github.com/HectorColaert/my_printf',
+    github: 'https://github.com/HectorColaert/my_printf',
     description:
       'Re-implementation of printf in C, handling %s, %d, %i, %c and %% without the standard library.',
     category: 'school',
@@ -59,6 +65,7 @@ export const projects: Project[] = [
     name: 'my_top',
     image: '/assets/Images/p3.png',
     link: 'https://github.com/HectorColaert/my_top',
+    github: 'https://github.com/HectorColaert/my_top',
     description:
       'Re-implementation of the top command in C: live view of running processes with PID, CPU and memory usage.',
     category: 'school',

@@ -10,3 +10,8 @@ export const profile = {
   photo: '/assets/Images/pp.png',
   lookingFor: 'Looking for an internship starting next year',
 } as const
+
+export const profileExtra = {
+  location: 'France',
+  availability: 'Internship, starting next year',
+} as const
