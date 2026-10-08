@@ -1,8 +1,0 @@
-.timeline { list-style: none; margin: 0; padding: 0 0 0 1.5rem; border-left: 2px solid var(--border); display: grid; gap: 1.5rem; }
-.timeline-item { position: relative; }
-.timeline-dot { position: absolute; left: calc(-1.5rem - 7px); top: 1.4rem; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--bg); }
-.timeline-period { font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); }
-.timeline-item h3 { margin: 0.35rem 0 0; font-size: 1.2rem; }
-.timeline-org { margin: 0.15rem 0 0.75rem; color: var(--muted); font-weight: 600; }
-.timeline-summary { color: var(--muted); margin: 0 0 0.75rem; line-height: 1.6; }
-.timeline-item ul { margin: 0; padding-left: 1.1rem; color: var(--text); line-height: 1.7; font-size: 0.95rem; }
