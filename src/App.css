@@ -159,3 +159,17 @@
   .banner-text { padding: 22px; }
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 12px; }
 }
+
+/* ---------- live Roblox stats ---------- */
+.avatar.sm { overflow: hidden; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.tile > .stats { display: flex; align-items: center; gap: 6px; }
+.live { flex: none; width: 7px; height: 7px; border-radius: 50%; background: #c7c7cc; }
+.live.on { background: #30c76b; box-shadow: 0 0 0 3px #30c76b30; }
+
+.banner .banner-stats { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: -6px 0 18px; font-size: 0.85rem; font-weight: 500; }
+
+.numbers { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 12px; }
+.numbers b { display: block; font-size: 1.5rem; letter-spacing: -0.02em; line-height: 1.1; }
+.numbers span { font-size: 0.74rem; color: var(--muted); }

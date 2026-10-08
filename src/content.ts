@@ -1,6 +1,10 @@
 // All the text of the portfolio lives here. Replace the placeholders.
 // `cover` is optional: drop an image in /public/covers and set cover: '/covers/my-game.png'.
-// Without it, a soft gradient (`tone`) is used.
+// Without it, the Roblox icon is used when `placeId` is set, else a soft gradient (`tone`).
+//
+// Live Roblox stats (players now, visits, likes) need the PLACE ID of each game:
+// it is the number in the game URL, roblox.com/games/<placeId>/Name.
+// Communities: the GROUP ID is the number in roblox.com/communities/<groupId>/Name.
 
 export type Kind = 'game' | 'map' | 'web'
 
@@ -11,14 +15,16 @@ export interface Entry {
   link: string
   tone: [string, string]
   cover?: string
-  meta?: string // e.g. "1.2M visits"
+  meta?: string // shown when there are no live stats, e.g. "Luau · DataStore"
+  placeId?: number // Roblox games and maps only
   featured?: boolean
 }
 
 export interface Community {
   name: string
   platform: string // Discord, Roblox Group, ...
-  members?: string
+  members?: string // shown when there are no live stats
+  groupId?: number // Roblox groups only
   link: string
   tone: [string, string]
 }
