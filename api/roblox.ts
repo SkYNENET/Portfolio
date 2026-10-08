@@ -7,6 +7,7 @@
 const MAX_IDS = 30
 
 interface GameStats {
+  name?: string
   playing: number
   visits: number
   favorites: number
@@ -59,7 +60,7 @@ async function gameStats(placeIds: string[]): Promise<Record<string, GameStats>>
   const list = known.map(([, universe]) => universe).join(',')
 
   const [games, votes, icons] = await Promise.all([
-    getJson<{ data: { id: number; playing: number; visits: number; favoritedCount: number }[] }>(
+    getJson<{ data: { id: number; name: string; playing: number; visits: number; favoritedCount: number }[] }>(
       `https://games.roblox.com/v1/games?universeIds=${list}`,
     ),
     getJson<{ data: { id: number; upVotes: number; downVotes: number }[] }>(
@@ -77,6 +78,7 @@ async function gameStats(placeIds: string[]): Promise<Record<string, GameStats>>
     const vote = votes?.data.find((v) => String(v.id) === universe)
     const icon = icons?.data.find((i) => String(i.targetId) === universe)?.imageUrl
     out[place] = {
+      name: game.name,
       playing: game.playing,
       visits: game.visits,
       favorites: game.favoritedCount,

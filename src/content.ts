@@ -42,6 +42,7 @@ export const profile = {
 export const entries: Entry[] = [
   {
     name: 'Game One',
+    placeId: 93487925421293,
     kind: 'game',
     tagline: 'One sentence on what players do and what you built.',
     link: 'https://www.roblox.com/',

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 export interface GameStats {
+  name?: string
   playing: number
   visits: number
   favorites: number
