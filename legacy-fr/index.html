@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hector Colaert</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <span class="logo">Hector Colaert</span>
+        <div class="links">
+            <a href="#projets">Projets</a>
+            <a href="#parcours">Ce que j'ai appris</a>
+            <a href="#experiences">Expériences</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <img src="assets/Images/pp.png" alt="Photo de Hector Colaert" class="hero__photo">
+        <p class="hero__label">PORTFOLIO</p>
+        <h1>Hector Colaert</h1>
+        <p>Étudiant à Epitech &amp; créateur de jeux Roblox</p>
+    </header>
+
+    <section id="projets">
+        <div class="container">
+            <h2>Mes projets</h2>
+
+            <h3 class="sous-titre">Projets personnels</h3>
+            <div class="grille" id="grille-perso"></div>
+
+            <h3 class="sous-titre">Projets scolaires</h3>
+            <div class="grille" id="grille-pro"></div>
+        </div>
+    </section>
+
+<section id="parcours" class="alt">
+    <div class="container">
+        <h2>Ce que j'ai appris</h2>
+        <p>Cette année à Epitech m'a appris à coder en C et à gérer la mémoire manuellement. J'ai aussi découvert le développement web avec HTML, CSS et JavaScript à travers ce portfolio.</p>
+        <p>J'ai progressé sur la logique algorithmique avec des projets comme BSQ, et appris à travailler avec Git et GitHub au quotidien.</p>
+        <p>En parallèle du C, j'ai aussi travaillé en Python pour les projets data et du traitement de gros datasets jusqu'à des modèles de classification comme la régression logistique ou Random Forest. J'ai également abordé la programmation graphique 2D avec la CSFML à travers un petit jeu de tir.</p>
+        <p>Côté outils, j'ai pris l'habitude d'écrire mes propres Makefile, de respecter la norme de coding style Epitech, et de découper mes projets en modules réutilisables plutôt que d'écrire des gros fichiers monolithiques.</p>
+    </div>
+</section>
+
+<section id="experiences">
+    <div class="container">
+        <h2>Expériences</h2>
+        <p>En dehors de l'école, je développe des jeux sur Roblox depuis plusieurs années. C'est ce qui m'a donné l'envie de faire du développement et m'a permis d'apprendre la logique de programmation avant même d'entrer à Epitech.</p>
+        <p>Ces projets m'ont amené à manipuler des concepts plus avancés que ce que je voyais en cours au début : architecture modulaire client/serveur, persistance des données joueurs entre les sessions, systèmes anti-triche, et synchronisation entre plusieurs serveurs. Apprendre à maintenir une base de code conséquente sur la durée, c'est probablement ce qui m'a le plus servi en entrant à Epitech.</p>
+        <p>À côté de Roblox, je m'amuse avec d'autres technos en autodidacte : du scripting Python pour automatiser des tâches répétitives, de l'expérimentation avec des schémas PostgreSQL, et plus récemment quelques projets web avec Next.js et Supabase.</p>
+    </div>
+</section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Nom : Hector Colaert</p>
+            <p>Téléphone : 06 21 42 21 92</p>
+            <p>Email : hector.colaert@epitech.eu</p>
+
+            <form class="formulaire">
+                <input type="text" placeholder="Votre nom">
+                <input type="email" placeholder="Votre email">
+                <textarea rows="5" placeholder="Votre message"></textarea>
+                <button type="submit" class="bouton">Envoyer</button>
+            </form>
+
+            <a class="bouton" href="assets/CV/CV_Hector.pdf" download>Telecharger mon CV</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; by Hector Colaert</p>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal__contenu">
+            <span class="modal__fermer" id="modal-fermer">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <h3 id="modal-nom"></h3>
+            <p id="modal-des"></p>
+            <a id="modal-lien" href="" target="_blank" class="bouton">Voir le projet</a>
+        </div>
+    </div>
+
+    <script src="Links/games.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
