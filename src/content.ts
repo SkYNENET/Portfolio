@@ -41,13 +41,13 @@ export const profile = {
 
 export const entries: Entry[] = [
   {
-    name: 'Game One',
+    name: 'Search For The Egg',
     placeId: 93487925421293,
     kind: 'game',
-    tagline: 'One sentence on what players do and what you built.',
-    link: 'https://www.roblox.com/',
+    tagline: 'TODO: one sentence on what players do and what you built.',
+    link: 'https://www.roblox.com/games/93487925421293',
     tone: ['#ffb36b', '#ff6b8b'],
-    meta: 'Luau · DataStore',
+    meta: 'Roblox',
     featured: true,
   },
   {
